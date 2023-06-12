@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    app:cardCornerRadius="@dimen/activity_horizontal_margin"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <CheckBox
+            android:id="@+id/chkRedeemGift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:theme="@style/checkBoxStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/ivGiftImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivGiftImage"
+            app:layout_constraintVertical_bias="0.41000003" />
+
+        <ImageView
+            android:id="@+id/ivGiftImage"
+            android:layout_width="78dp"
+            android:layout_height="77dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chkRedeemGift"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"
+            app:srcCompat="@drawable/bike" />
+
+        <TextView
+            android:id="@+id/tvPrizeListTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Bajaj Pulsar 150"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvPrizeListNeededPoints"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivGiftImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39" />
+
+        <TextView
+            android:id="@+id/tvPrizeListNeededPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:text="5000"
+            android:textColor="@color/newbasecolor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPrizeListNeededPointsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POINTS"
+            android:textColor="@color/newbasecolor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvPrizeListNeededPoints"
+            app:layout_constraintStart_toStartOf="@+id/tvPrizeListNeededPoints"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrizeListNeededPoints" />
+
+        <TextView
+            android:id="@+id/tvProductListCartQtyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="1"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/btGiftListQtyPlus"
+            app:layout_constraintEnd_toStartOf="@+id/btGiftListQtyPlus"
+            app:layout_constraintTop_toTopOf="@+id/btGiftListQtyPlus"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <Button
+            android:id="@+id/btGiftListQtyPlus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/item_button_low_radius"
+            android:padding="0dp"
+            android:paddingLeft="0dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:iconPadding="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrizeListNeededPointsLabel" />
+
+        <Button
+            android:id="@+id/btGiftListQtyMinus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/item_button_low_radius"
+            android:padding="0dp"
+            android:paddingLeft="0dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:iconPadding="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvProductListCartQtyValue"
+            app:layout_constraintTop_toTopOf="@+id/btGiftListQtyPlus" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

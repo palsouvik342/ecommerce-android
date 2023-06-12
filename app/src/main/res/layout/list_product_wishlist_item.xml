@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivWishListProductImage"
+            android:layout_width="61dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/product_image" />
+
+        <TextView
+            android:id="@+id/tvWishListProductTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="KF-18"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvWishListProductPrice"
+            app:layout_constraintStart_toEndOf="@+id/ivWishListProductImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWishListProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="₹ 3500"
+            android:textColor="@color/newbasecolor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvWishListProductTitle" />
+
+        <TextView
+            android:id="@+id/tvWishListProductPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="00"
+            android:textColor="@color/newbasecolor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvWishListProductTitle" />
+
+        <TextView
+            android:id="@+id/tvWishListProductDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Fipronil 18.87% W/W SC Available Pack Size 100ml, 250ml, 500ml,1ltr,5ltr. Fipronil 18.87% W/W "
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvWishListProductPrice"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvWishListProductTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvWishListProductTitle" />
+
+        <ImageView
+            android:id="@+id/ivWishListProductCartIcon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvWishListProductDescription"
+            app:layout_constraintTop_toBottomOf="@+id/tvWishListProductDescription"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+        <TextView
+            android:id="@+id/ivWishListProductAddToCartText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/add_to_cart"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivWishListProductCartIcon"
+            app:layout_constraintStart_toEndOf="@+id/ivWishListProductCartIcon"
+            app:layout_constraintTop_toTopOf="@+id/ivWishListProductCartIcon" />
+
+        <ImageView
+            android:id="@+id/ivWishListProductRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/ic_baseline_delete_24"
+            app:layout_constraintBottom_toBottomOf="@+id/ivWishListProductAddToCartText"
+            app:layout_constraintEnd_toEndOf="@+id/tvWishListProductDescription"
+            app:layout_constraintTop_toTopOf="@+id/ivWishListProductAddToCartText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

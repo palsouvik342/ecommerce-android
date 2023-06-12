@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    app:cardCornerRadius="@dimen/activity_horizontal_margin"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivGiftImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bike" />
+
+        <TextView
+            android:id="@+id/tvPrizeListTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Gift name"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivGiftImage"
+            app:layout_constraintTop_toTopOf="@+id/ivGiftImage" />
+
+        <TextView
+            android:id="@+id/tvPrizeListNeededPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="5000"
+            android:textColor="@color/newbasecolor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvPrizeListTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrizeListTitle" />
+
+        <TextView
+            android:id="@+id/tvPrizeListNeededPointsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="POINTS"
+            android:textColor="@color/newbasecolor"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPrizeListNeededPoints"
+            app:layout_constraintStart_toEndOf="@+id/tvPrizeListNeededPoints"
+            app:layout_constraintTop_toTopOf="@+id/tvPrizeListNeededPoints" />
+
+        <TextView
+            android:id="@+id/tvPrizeQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPrizeListNeededPointsLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvPrizeListNeededPointsLabel" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Qty : "
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvPrizeQuantity"
+            app:layout_constraintTop_toTopOf="@+id/tvPrizeQuantity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

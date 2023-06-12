@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newbasecolor"
+    tools:context=".activities.OtpSubmitActivity">
+
+    <ImageView
+        android:id="@+id/ivLoginMainAppLogo"
+        android:layout_width="171dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_logo" />
+
+    <ImageView
+        android:id="@+id/ivLoginHeartIcon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLoginMainAppLogo"
+        app:srcCompat="@drawable/ic_leaf_eco_24" />
+
+    <TextView
+        android:id="@+id/tvLoginUpperTagLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/it_is_a_54_year_olds_group"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLoginHeartIcon1"
+        app:layout_constraintStart_toEndOf="@+id/ivLoginHeartIcon1"
+        app:layout_constraintTop_toTopOf="@+id/ivLoginHeartIcon1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ivLoginHeartIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/ivLoginHeartIcon1"
+        app:layout_constraintTop_toBottomOf="@+id/ivLoginHeartIcon1"
+        app:srcCompat="@drawable/ic_leaf_eco_24" />
+
+    <TextView
+        android:id="@+id/tvLoginUpperTagLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/involved_in_agrochemicals"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivLoginHeartIcon2"
+        app:layout_constraintTop_toTopOf="@+id/ivLoginHeartIcon2" />
+
+    <ImageView
+        android:id="@+id/ivLoginMainBackground"
+        android:layout_width="0dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoginUpperTagLine2"
+        app:srcCompat="@drawable/item_upper_rounded_white_background" />
+
+    <TextView
+        android:id="@+id/tvIamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/i_am_a"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/ivLoginMainBackground"
+        app:layout_constraintTop_toTopOf="@+id/ivLoginMainBackground" />
+
+    <TextView
+        android:id="@+id/tvUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIamA"
+        app:layout_constraintStart_toEndOf="@+id/tvIamA"
+        app:layout_constraintTop_toTopOf="@+id/tvIamA" />
+
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/etLoginOtpCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:foregroundGravity="center"
+        android:textColor="#000"
+        app:bar_active_color="@color/red"
+        app:bar_enabled="false"
+        app:hide_otp="false"
+        app:layout_constraintEnd_toEndOf="@+id/tvLoginOtpLabel"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/tvLoginOtpLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoginOtpLabel"
+        app:length="6"
+        app:otp_box_background="@drawable/otp_bg"
+        app:otp_text_size="40dp"
+        app:width="40dp" />
+
+    <TextView
+        android:id="@+id/tvLoginOtpLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/check_your_inbox_we_have_send_an_otp_to_entered_number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvIamA"
+        app:layout_constraintTop_toBottomOf="@+id/tvIamA" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/item_square_light_gray"
+        android:foregroundGravity="center"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLoginMainBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvLoginBottomAgreeText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/by_signing_in_you_are_agree"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvLoginBottomTermsText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLoginBottomTermsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_of_use"
+                android:textColor="@color/newbasecolor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout11">
+
+            <TextView
+                android:id="@+id/tvLoginBottomAgreeText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/and"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvLoginPolicyText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLoginPolicyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/newbasecolor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvLoginCopyRightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="© 2022 Krishi Rasayan | All right reserved"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout10" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btVerifyGetOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/item_rounded_button_primary"
+        android:text="@string/verify_otp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvLoginOtpLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvLoginOtpLabel"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginOtpCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

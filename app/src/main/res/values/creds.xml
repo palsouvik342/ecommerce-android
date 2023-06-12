@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_server_client_id">1032914470867-odphl9cfgui307mp92hk975619hh1vsl.apps.googleusercontent.com</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAh8ijXl7Pr3DNjSMB_k6Kj3i2Z2p5odlE</string>
+<!--    <string name="facebook_app_id">643685173443777</string>-->
+<!--    <string name="fb_login_protocol_scheme">fb643685173443777</string>-->
+<!--    <string name="facebook_client_token">31a20907b773628c341a14204ff678e0</string>-->
+    <string name="facebook_app_id">149271924085490</string>
+    <string name="fb_login_protocol_scheme">fb149271924085490</string>
+    <string name="facebook_client_token">25419fc66785d8a0b32e95cf2d04952c</string>
+</resources>

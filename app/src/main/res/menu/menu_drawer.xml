@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:id="@+id/customer">
+        <item
+            android:id="@+id/nav_home_customer"
+            android:icon="@drawable/ic_home_24"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_profile_customer"
+            android:icon="@drawable/ic_baseline_person_pin_24"
+            android:title="@string/nav_profile" />
+        <item
+            android:id="@+id/nav_products_customer"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="@string/our_products" />
+        <item
+            android:id="@+id/nav_cart_customer"
+            android:icon="@drawable/ic_baseline_shopping_cart_checkout_24"
+            android:title="@string/nav_cart" />
+        <item
+            android:id="@+id/nav_order_customer"
+            android:icon="@drawable/ic_list_order_24"
+            android:title="@string/nav_order" />
+        <item
+            android:id="@+id/nav_address_customer"
+            android:icon="@drawable/ic_baseline_location_on_24"
+            android:title="@string/nav_address" />
+        <item
+            android:id="@+id/nav_wishlist_customer"
+            android:icon="@drawable/ic_baseline_favorite_border_24"
+            android:title="@string/my_wishlist" />
+
+
+        <item
+            android:id="@+id/nav_news_customer"
+            android:icon="@drawable/ic_baseline_newspaper_24"
+            android:title="@string/nav_news" />
+
+        <item
+            android:id="@+id/nav_logout_customer"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="@string/nav_logout" />
+
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/retailer" android:visible="false">
+        <item
+            android:id="@+id/nav_home_retailer"
+            android:icon="@drawable/ic_home_24"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_profile_retailer"
+            android:icon="@drawable/ic_baseline_person_pin_24"
+            android:title="@string/nav_profile" />
+        <item
+            android:id="@+id/nav_distributor_retailer"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:title="@string/set_distributor" />
+        <item
+            android:id="@+id/nav_products_retailer"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="@string/our_products" />
+        <item
+            android:id="@+id/nav_retailer_order"
+            android:icon="@drawable/ic_list_order_24"
+            android:title="@string/nav_order" />
+        <item
+            android:id="@+id/nav_buy_products_retailer"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="@string/invoice_products" />
+        <item
+            android:id="@+id/nav_cart_retailer"
+            android:icon="@drawable/ic_baseline_shopping_cart_checkout_24"
+            android:title="@string/nav_product_point_upload" />
+        <item
+            android:id="@+id/nav_order_retailer"
+            android:icon="@drawable/ic_list_order_24"
+            android:title="@string/nav_my_point_sum" />
+        <item
+            android:id="@+id/nav_wishlist_retailer"
+            android:icon="@drawable/ic_baseline_favorite_border_24"
+            android:title="@string/my_wishlist" />
+        <item
+            android:id="@+id/nav_reward_retailer"
+            android:icon="@drawable/ic_baseline_card_giftcard_24"
+            android:title="@string/nav_reward" />
+        <item
+            android:id="@+id/nav_wallet_retailer"
+            android:icon="@drawable/ic_baseline_card_giftcard_24"
+            android:title="@string/my_wallet" />
+        <item
+            android:id="@+id/nav_news_retailer"
+            android:icon="@drawable/ic_baseline_newspaper_24"
+            android:title="@string/nav_news" />
+        <item
+            android:id="@+id/nav_logout_retailer"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="@string/nav_logout" />
+
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/distributor" android:visible="false">
+        <item
+            android:id="@+id/nav_home_distributor"
+            android:icon="@drawable/ic_home_24"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_profile_distributor"
+            android:icon="@drawable/ic_baseline_person_pin_24"
+            android:title="@string/nav_profile" />
+        <item
+            android:id="@+id/nav_order_assign_distributor"
+            android:icon="@drawable/ic_list_order_24"
+            android:title="@string/assigned_order" />
+        <item
+            android:id="@+id/nav_order_confirm_distributor"
+            android:icon="@drawable/ic_list_order_24"
+            android:title="@string/myorder" />
+        <item
+            android:id="@+id/nav_news_distributor"
+            android:icon="@drawable/ic_baseline_newspaper_24"
+            android:title="@string/nav_news" />
+        <item
+            android:id="@+id/nav_logout_distributor"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="@string/nav_logout" />
+
+    </group>
+
+    <item android:title="Info &amp; Share">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="@string/nav_share" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_baseline_policy_24"
+                android:title="@string/privacy_policy" />
+            <item android:title="@string/blank" />
+            <item android:title="@string/blank" />
+
+        </menu>
+    </item>
+
+</menu>

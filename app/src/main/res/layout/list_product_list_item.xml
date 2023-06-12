@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    android:clipToPadding="false"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivHomeListProductImage"
+            android:layout_width="72dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/product_image" />
+
+        <TextView
+            android:id="@+id/ivHomeListProductTitle"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="KF-18"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivHomeListProductImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ivHomeListProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="₹ 00.00"
+            android:textColor="@color/newbasecolor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivHomeListProductTitle" />
+
+        <TextView
+            android:id="@+id/ivHomeListProductPoint"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="16dp"
+            android:text="00.00"
+            android:textAlignment="textEnd"
+            android:textColor="@color/newbasecolor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivHomeListProductTitle"
+            app:layout_constraintTop_toTopOf="@+id/ivHomeListProductTitle" />
+
+        <TextView
+            android:id="@+id/ivHomeListProductDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Fipronil 18.87% W/W SC Available Pack Size 100ml, 250ml, 500ml,1ltr,5ltr. Fipronil 18.87% W/W "
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/ivHomeListProductPrice"
+            app:layout_constraintStart_toStartOf="@+id/ivHomeListProductTitle"
+            app:layout_constraintTop_toBottomOf="@+id/ivHomeListProductTitle" />
+
+        <ImageView
+            android:id="@+id/ivHomeListProductWishlistIcon"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonProductAddToCart"
+            app:layout_constraintEnd_toEndOf="@+id/ivHomeListProductDescription"
+            app:layout_constraintTop_toTopOf="@+id/buttonProductAddToCart"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+        <ImageView
+            android:id="@+id/ivHomeListProductWishlistAdded"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivHomeListProductWishlistIcon"
+            app:layout_constraintEnd_toEndOf="@+id/ivHomeListProductWishlistIcon"
+            app:layout_constraintTop_toTopOf="@+id/ivHomeListProductWishlistIcon"
+            app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+        <Button
+            android:id="@+id/buttonProductAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/item_rounded_new_base_color"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ivHomeListProductDescription"
+            app:layout_constraintTop_toBottomOf="@+id/ivHomeListProductDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

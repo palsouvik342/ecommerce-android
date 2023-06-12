@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    app:cardCornerRadius="@dimen/activity_horizontal_margin"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/newbasecolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvOrderedProdutCurrentStatusDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Redeem Gift Request : "
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvRedeemRequestDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvOrderedProdutCurrentStatusDate"
+                app:layout_constraintStart_toEndOf="@+id/tvOrderedProdutCurrentStatusDate"
+                app:layout_constraintTop_toTopOf="@+id/tvOrderedProdutCurrentStatusDate" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clApprovedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvOrderedProdutCurrentStatusDate"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrderedProdutCurrentStatusDate">
+
+                <TextView
+                    android:id="@+id/tvApprovedLblGiftRedeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Approved Gift Request : "
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvRedeemApproveDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/tvApprovedLblGiftRedeem"
+                    app:layout_constraintTop_toTopOf="@+id/tvApprovedLblGiftRedeem" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <ImageView
+                android:id="@+id/ivOrderedStatusGreen"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRedeemStatus"
+                app:layout_constraintEnd_toStartOf="@+id/tvRedeemStatus"
+                app:layout_constraintTop_toTopOf="@+id/tvRedeemStatus"
+                app:srcCompat="@drawable/item_rounded_new_base_color"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/ivOrderedStatusRed"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRedeemStatus"
+                app:layout_constraintEnd_toStartOf="@+id/tvRedeemStatus"
+                app:layout_constraintTop_toTopOf="@+id/tvRedeemStatus"
+                app:srcCompat="@drawable/item_rounded_red_color"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/ivOrderedStatusYellow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRedeemStatus"
+                app:layout_constraintEnd_toStartOf="@+id/tvRedeemStatus"
+                app:layout_constraintTop_toTopOf="@+id/tvRedeemStatus" />
+
+            <TextView
+                android:id="@+id/tvRedeemStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Pending"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout8"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8"
+            android:background="@color/newbasecolorlight">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRedeemGiftList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_my_gift_single_item" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/newbasecolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout9"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout9"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout9">
+
+            <TextView
+                android:id="@+id/tvGiftRedeemTotalPointLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Total Points Redeems : "
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTotalRedeemPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                app:layout_constraintBottom_toBottomOf="@+id/tvGiftRedeemTotalPointLabel"
+                app:layout_constraintStart_toEndOf="@+id/tvGiftRedeemTotalPointLabel"
+                app:layout_constraintTop_toTopOf="@+id/tvGiftRedeemTotalPointLabel" />
+
+            <TextView
+                android:id="@+id/tvGiftRedeemTotalItemLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item : "
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRedeemItemCount"
+                app:layout_constraintEnd_toStartOf="@+id/tvRedeemItemCount"
+                app:layout_constraintTop_toTopOf="@+id/tvRedeemItemCount" />
+
+            <TextView
+                android:id="@+id/tvRedeemItemCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blackNavy">#10101C</color>
+    <color name="next_1">#8B88DC</color>
+    <color name="next_2">#0183C5</color>
+    <color name="next_3">#2F6DFF</color>
+    <color name="next_4">#28C7F6EA</color>
+    <color name="dark_navy">#0E2132</color>
+
+    <color name="colorPrimary">#8BC24A</color>
+    <color name="colorPrimaryDark">#f8a76d</color>
+    <color name="colorAccent">#814AC2</color>
+
+    <color name="colorPrimaryTranslucent">#CC8BC24A</color>
+
+    <color name="colorOk">#1DB4EB</color>
+    <color name="colorOkDark">#13789C</color>
+    <color name="colorOkLight">#68CDF1</color>
+
+    <color name="colorCancel">#FF3030</color>
+    <color name="colorCancelDark">#AA2020</color>
+    <color name="colorCancelLight">#FF7575</color>
+
+    <color name="colorGreen">#D3E9B8</color>
+    <color name="colorGreenDark">#8C9B7A</color>
+    <color name="colorGreenLight">#E1F0CF</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorOffWhite">#EAEAEA</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkGrey">#5C5C5C</color>
+    <color name="colorLightGrey">#BCBCBC</color>
+    <color name="newbasecolor">#f68a3c</color>
+    <color name="newFeedbasecolor">#97A0EDBE</color>
+    <color name="newbasecolorlight">#b8eacb</color>
+    <color name="flat_red_1">#e74c3c</color>
+    <color name="dialog_text">#37966f</color>
+    <color name="yellow">#f1e228</color>
+    <color name="yellowr">#DACC1E</color>
+    <color name="prdct_bg">#eeeeee</color>
+</resources>

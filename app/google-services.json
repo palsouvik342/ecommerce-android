@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "196677575897",
+    "project_id": "bandhan-solution",
+    "storage_bucket": "bandhan-solution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196677575897:android:9a6bf91e96703937e14ac8",
+        "android_client_info": {
+          "package_name": "os.com.krishirasayan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196677575897-2jgk7vbsopkh876fvi6jq96uvdolcmq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "os.com.krishirasayan",
+            "certificate_hash": "03c2b19f53c425c74c883e2d262097147eaecf07"
+          }
+        },
+        {
+          "client_id": "196677575897-tgiqh289j6bbkbn6s3vo1kgb18kidbsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT_tGAM_9FQ3qLT-AMYlQnWH_xoxbzOKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196677575897-tgiqh289j6bbkbn6s3vo1kgb18kidbsi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

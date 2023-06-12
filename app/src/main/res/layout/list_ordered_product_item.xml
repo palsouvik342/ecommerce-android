@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivOrderitemProductImage"
+            android:layout_width="72dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="2dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/product_image" />
+
+        <TextView
+            android:id="@+id/ivOrderitemProductTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="KF-18"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/ivOrderitemProductPrice"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivOrderitemProductImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ivOrderitemProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="₹ 00.00"
+            android:textColor="@color/newbasecolor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivOrderitemProductTitle" />
+
+
+        <TextView
+            android:id="@+id/ivOrderitemProductPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="0.00"
+            android:textColor="@color/newbasecolor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivOrderitemProductTitle" />
+
+
+        <TextView
+            android:id="@+id/tvOrderItemQtyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ordered Qty:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ivOrderitemProductTitle"
+            app:layout_constraintTop_toBottomOf="@+id/ivOrderitemProductTitle" />
+
+        <TextView
+            android:id="@+id/tvOrderItemQtyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOrderItemQtyLabel"
+            app:layout_constraintStart_toEndOf="@+id/tvOrderItemQtyLabel"
+            app:layout_constraintTop_toTopOf="@+id/tvOrderItemQtyLabel" />
+
+        <TextView
+            android:id="@+id/tvOrderItemVarValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 gm"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOrderItemVarLabel"
+            app:layout_constraintEnd_toEndOf="@+id/ivOrderitemProductPrice"
+            app:layout_constraintTop_toTopOf="@+id/tvOrderItemVarLabel" />
+
+        <TextView
+            android:id="@+id/tvOrderItemVarLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Variant:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOrderItemQtyLabel"
+            app:layout_constraintEnd_toStartOf="@+id/tvOrderItemVarValue"
+            app:layout_constraintTop_toTopOf="@+id/tvOrderItemQtyLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

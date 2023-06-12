@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="corner_radius_standard">15dp</dimen>
+    <dimen name="tv_bottom_padding">20dp</dimen>
+    <dimen name="font_size_small">10sp</dimen>
+    <dimen name="font_size_standard">12sp</dimen>
+    <dimen name="font_size_large">16sp</dimen>
+    <dimen name="font_size_title">22sp</dimen>
+    <dimen name="font_size_huge">32sp</dimen>
+    <dimen name="corner_radius_tight">10dp</dimen>
+    <dimen name="top_stroke_width">20dp</dimen>
+    <dimen name="bottom_stroke_width">2dp</dimen>
+    <dimen name="title_text">14sp</dimen>
+    <dimen name="view_all_text">12sp</dimen>
+    <dimen name="margin_bottom_home">5dp</dimen>
+
+
+</resources>

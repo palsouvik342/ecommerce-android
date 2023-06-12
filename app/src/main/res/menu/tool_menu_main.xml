@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/miCart"
+        android:icon="@drawable/icc_cart"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/cart">
+    </item>
+    <item
+        android:id="@+id/miInvoiceCart"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/cart">
+    </item>
+    <item
+        android:title="Company Info"
+        android:icon="@drawable/icc_threelines">
+        <menu>
+            <item
+                android:id="@+id/nav_privacyPolicy"
+                android:icon="@drawable/ic_list_order_24"
+                android:title="@string/privacy_policy" />
+        </menu>
+    </item>
+</menu>

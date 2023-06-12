@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/overlay"
+        android:layout_width="270dp"
+        android:layout_height="130dp"
+        android:background="@drawable/blog_feature_list_image"
+        >
+        <ImageView
+            android:id="@+id/ivBlogListImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#90000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            >
+
+        </ImageView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp"
+            >
+            <TextView
+                android:id="@+id/tvBlogListTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="All brands \nCloth Fashion"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/percent_off_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvBlogListTitle"
+                app:layout_constraintStart_toStartOf="@id/tvBlogListTitle"
+                android:text="Save upto 50% off"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_semibold"
+                >
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/percent_off_text"
+                app:layout_constraintStart_toStartOf="@id/percent_off_text"
+                app:layout_constraintTop_toBottomOf="@id/percent_off_text">
+
+                <Button
+                    android:id="@+id/shop_now_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/newbasecolor"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="shop now"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    app:layout_constraintEnd_toEndOf="@id/parent"
+                    app:layout_constraintStart_toStartOf="@id/parent"
+                    app:layout_constraintTop_toBottomOf="@id/parent">
+
+                </Button>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

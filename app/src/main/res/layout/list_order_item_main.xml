@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    app:cardCornerRadius="@dimen/activity_horizontal_margin"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvOrderedProductTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="# 2007972867"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOrderedProdutConfirmedStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Ordered"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOrderedStatusGreen"
+            app:layout_constraintStart_toEndOf="@+id/ivOrderedStatusGreen"
+            app:layout_constraintTop_toTopOf="@+id/ivOrderedStatusGreen" />
+
+        <TextView
+            android:id="@+id/tvOrderedProdutConfirmedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24th February 2022"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tvOrderedProdutConfirmedStatus"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderedProdutConfirmedStatus" />
+
+        <TextView
+            android:id="@+id/tvOrderedProdutCurrentStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Canceled"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivOrderedStatusRed"
+            app:layout_constraintStart_toEndOf="@+id/ivOrderedStatusRed"
+            app:layout_constraintTop_toTopOf="@+id/ivOrderedStatusRed"
+            app:layout_constraintVertical_bias="0.833" />
+
+        <TextView
+            android:id="@+id/tvOrderedProdutCurrentStatusDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24th February 2022"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tvOrderedProdutCurrentStatus"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderedProdutCurrentStatus" />
+
+        <TextView
+            android:id="@+id/tvOrderedProdutPrice"
+            android:layout_width="40dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="130dp"
+            android:text="Price:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOrderedProductTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvOrderedProductTitle" />
+
+        <TextView
+            android:id="@+id/tvOrderedProdutPriceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="10500"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOrderedProdutPrice"
+            app:layout_constraintStart_toEndOf="@+id/tvOrderedProdutPrice"
+            app:layout_constraintTop_toTopOf="@+id/tvOrderedProdutPrice" />
+
+        <ImageView
+            android:id="@+id/ivOrderedStatusGreen"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvOrderedProductTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderedProductTitle"
+            app:srcCompat="@drawable/item_rounded_new_base_color" />
+
+        <ImageView
+            android:id="@+id/ivOrderedStatusRed"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvOrderedProdutPrice"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderedProdutPrice"
+            app:srcCompat="@drawable/item_rounded_red_color" />
+
+        <Button
+            android:id="@+id/btOrderDetails"
+            android:layout_width="100dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/item_rounded_button_primary"
+            android:padding="2dp"
+            android:paddingBottom="5dp"
+            android:text="View Details "
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvOrderedProdutConfirmedDate"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderedProdutConfirmedDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
